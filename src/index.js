@@ -36,7 +36,7 @@ async function updateHtml(content) {
 			res.end(content);
 			res.end(); 
 		})
-		.listen(process.env.PORT || 8080);
+		.listen(process.env.PORT);
 }
 
 // bid : satis
