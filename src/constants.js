@@ -12,20 +12,14 @@
      tryToEur: 'https://api.fixer.io/latest?base=TRY'
    },
      mailJet: {
-         apiKey: 'dfe2f8c489be8a12b30db36dbe9ad02d',
-         apiSecret: '75a8cffcc816bc291ee50852768c9f35',
+         apiKey: '',
+         apiSecret: '',
      },
      nexmo: {
-           apiKey: 'eb12bd2c',
-            apiSecret: '43f86c8c685d01da'
+           apiKey: '',
+            apiSecret: ''
      },
      emailRecipientList: [
-         {
-             'Email' : 'koyuncu.alibaki@gmail.com'
-         },
-        {
-             'Email': 'td2018krakow@gmail.com'
-         }
      ],
      
 };

@@ -35,8 +35,8 @@ export async function sendNexmoSms(smsBody) {
 export async function sendEmail(mailBody, mailSubject) {
 	var mail = Mailjet.connect(constants.mailJet.apiKey, constants.mailJet.apiSecret);
 	var emailData = {
-		FromEmail: 'koyuncu.alibaki@gmail.com',
-		FromName: 'ABK-ARBITRAGE',
+		FromEmail: yourEmail,
+		FromName: 'ARBITRAGE',
 		Subject: mailSubject,
 		'Text-part': mailBody,
 		Recipients: constants.emailRecipientList
