@@ -16,17 +16,12 @@ if (process.env.hourlyCheck) {
 
 if (process.env.smsCheck) {
 	setInterval(runArbitrage, config.smsCheckInterval);
-    updateHtml('Running Hourly/SMS Check...');
 }
 
 async function runArbitrage() {
 	let bitstampToKoinimData = await bitstampToKoinim();
 	let koinimToBitstampData = await koinimToBitstamp();
 	await notificationServices(bitstampToKoinimData, koinimToBitstampData);
-    
-    var d = new Date();
-    updateHtml(`Last check :${d} 
-Data: ${bitstampToKoinimData} ${koinimToBitstampData}`);
 }
 
 async function updateHtml(content) {
